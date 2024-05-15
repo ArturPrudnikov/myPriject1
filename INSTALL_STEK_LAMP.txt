@@ -1,0 +1,41 @@
+sudo apt update 
+  605  sudo apt upgrade 
+  606  sudo apt update
+  607  sudo apt install apache2
+  608  sudo ufw app list
+  609  sudo ufw allow in "Apache"
+  610  sudo ufw status
+  611  sudo systemctl start ufw
+  612  sudo ufw status
+  613  sudo systemctl start ufw
+  614  sudo ufw enable
+  615  sudo ufw status
+  616  sudo ufw allow in "Apache"
+  617  ifconfig 
+  618  ip addr show eth0 | grep inet | awk '{ print $2; }' | sed 's/\/.*$//'
+  619  ip addr show eth* | grep inet | awk '{ print $2; }' | sed 's/\/.*$//'
+  620  ip addr show ens33 | grep inet | awk '{ print $2; }' | sed 's/\/.*$//'
+  621  curl http://icanhazip.com
+  622  sudo apt install mysql-server
+  623  sudo mysql_secure_installation
+  624  sudo mysql
+  625  sudo apt install php libapache2-mod-php php-mysql
+  626  php -v
+  627  sudo mkdir /var/www/test_domain
+  628  ls -l /var/www/test_domain
+  629  ls -la
+  630  ls -la /var/www/test_domain
+  631  sudo chown -R $USER:$USER /var/www/test_domain
+  632  sudo nano /etc/apache2/sites-available/test_domain.conf
+  633  sudo a2ensite test_domain
+  634  systemctl reload apache2
+  635  sudo a2dissite 000-default
+  636  systemctl reload apache2
+  637  sudo apache2ctl configtest
+  638  sudo systemctl reload apache2
+  639  nano /var/www/test_domain/index.html
+  640  nano /var/www/test_domain/info.php
+  641  sudo rm /var/www/test_domain/info.php
+  642  sudo mysql
+  643  mysql -u example_user -p
+  644  nano /var/www/test_domain/todo_list.php
